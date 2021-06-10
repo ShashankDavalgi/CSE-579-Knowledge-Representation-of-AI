@@ -1,0 +1,98 @@
+
+####################################################################################################
+
+Running test case for positive X axis: 
+clingo warehouseScenario.lp test_cases/x_axis_pos.lp  test_cases/test_output.lp -c m=20 -t4
+clingo version 5.2.2
+Reading from warehouseScenario.lp ...
+Solving...
+Answer: 1
+object(shelf,shelly) object(robot,1) at(object(robot,1),1,1,0) occurs(object(robot,1),move(1,0),1) occurs(object(robot,1),move(1,0),2) occurs(object(robot,1),move(-1,0),3) occurs(object(robot,1),move(1,0),20) occurs(object(robot,1),pdown,19) occurs(object(robot,1),pdown,16) occurs(object(robot,1),pdown,11) occurs(object(robot,1),pdown,9) occurs(object(robot,1),pdown,4) at(object(robot,1),2,1,1) at(object(robot,1),3,1,2) at(object(robot,1),2,1,3) at(object(shelf,shelly),2,1,4) at(object(robot,1),2,1,4) occurs(object(robot,1),pkup,5) at(object(robot,1),2,1,5) at(object(shelf,shelly),2,1,5) at(object(shelf,shelly),2,1,6) at(object(robot,1),2,1,6) occurs(object(robot,1),pkup,7) at(object(robot,1),2,1,7) at(object(shelf,shelly),2,1,7) at(object(robot,1),2,1,8) occurs(object(robot,1),pkup,8) at(object(robot,1),2,1,9) at(object(shelf,shelly),2,1,9) at(object(robot,1),2,1,10) occurs(object(robot,1),pkup,10) at(object(robot,1),2,1,11) at(object(shelf,shelly),2,1,11) at(object(robot,1),2,1,12) occurs(object(robot,1),pkup,12) at(object(robot,1),2,1,13) at(object(robot,1),2,1,14) at(object(robot,1),2,1,15) at(object(shelf,shelly),2,1,16) at(object(robot,1),2,1,16) occurs(object(robot,1),pkup,17) at(object(robot,1),2,1,17) at(object(robot,1),2,1,18) at(object(robot,1),2,1,19) at(object(shelf,shelly),2,1,19) at(object(robot,1),3,1,20)
+SATISFIABLE
+
+Models       : 1+
+Calls        : 1
+Time         : 0.175s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.176s
+Threads      : 4        (Winner: 4)
+
+####################################################################################################
+
+Running test case for positive Y axis: 
+clingo warehouseScenario.lp test_cases/y_axis_pos.lp  test_cases/test_output.lp -c m=20 -t4
+clingo version 5.2.2
+Reading from warehouseScenario.lp ...
+Solving...
+Answer: 1
+object(shelf,shelly) object(robot,1) at(object(robot,1),1,1,0) occurs(object(robot,1),move(0,1),1) occurs(object(robot,1),move(0,1),2) occurs(object(robot,1),move(0,-1),3) occurs(object(robot,1),move(0,1),20) occurs(object(robot,1),pdown,19) occurs(object(robot,1),pdown,16) occurs(object(robot,1),pdown,11) occurs(object(robot,1),pdown,9) occurs(object(robot,1),pdown,4) at(object(robot,1),1,2,1) at(object(robot,1),1,3,2) at(object(robot,1),1,2,3) at(object(shelf,shelly),1,2,4) at(object(robot,1),1,2,4) occurs(object(robot,1),pkup,5) at(object(robot,1),1,2,5) at(object(shelf,shelly),1,2,5) at(object(shelf,shelly),1,2,6) at(object(robot,1),1,2,6) occurs(object(robot,1),pkup,7) at(object(robot,1),1,2,7) at(object(shelf,shelly),1,2,7) at(object(robot,1),1,2,8) occurs(object(robot,1),pkup,8) at(object(robot,1),1,2,9) at(object(shelf,shelly),1,2,9) at(object(robot,1),1,2,10) occurs(object(robot,1),pkup,10) at(object(robot,1),1,2,11) at(object(shelf,shelly),1,2,11) at(object(robot,1),1,2,12) occurs(object(robot,1),pkup,12) at(object(robot,1),1,2,13) at(object(robot,1),1,2,14) at(object(robot,1),1,2,15) at(object(shelf,shelly),1,2,16) at(object(robot,1),1,2,16) occurs(object(robot,1),pkup,17) at(object(robot,1),1,2,17) at(object(robot,1),1,2,18) at(object(robot,1),1,2,19) at(object(shelf,shelly),1,2,19) at(object(robot,1),1,3,20)
+SATISFIABLE
+
+Models       : 1+
+Calls        : 1
+Time         : 0.177s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.178s
+Threads      : 4        (Winner: 4)
+
+####################################################################################################
+
+Running test case for negative X axis: 
+clingo warehouseScenario.lp test_cases/x_axis_neg.lp  test_cases/test_output.lp -c m=20 -t4
+clingo version 5.2.2
+Reading from warehouseScenario.lp ...
+Solving...
+Answer: 1
+object(shelf,shelly) object(robot,1) at(object(robot,1),3,1,0) occurs(object(robot,1),move(-1,0),1) occurs(object(robot,1),move(-1,0),2) occurs(object(robot,1),move(1,0),3) occurs(object(robot,1),move(-1,0),20) occurs(object(robot,1),pdown,16) occurs(object(robot,1),pdown,11) occurs(object(robot,1),pdown,7) occurs(object(robot,1),pdown,4) at(object(robot,1),2,1,1) at(object(robot,1),1,1,2) at(object(robot,1),2,1,3) at(object(shelf,shelly),2,1,4) at(object(robot,1),2,1,4) occurs(object(robot,1),pkup,5) at(object(robot,1),2,1,5) at(object(robot,1),2,1,6) at(object(robot,1),2,1,7) at(object(shelf,shelly),2,1,7) at(object(shelf,shelly),2,1,8) at(object(robot,1),2,1,8) occurs(object(robot,1),pkup,8) occurs(object(robot,1),pkup,9) at(object(robot,1),2,1,9) at(object(shelf,shelly),2,1,9) at(object(robot,1),2,1,10) occurs(object(robot,1),pkup,10) at(object(robot,1),2,1,11) at(object(shelf,shelly),2,1,11) at(object(shelf,shelly),2,1,12) at(object(robot,1),2,1,12) occurs(object(robot,1),pkup,12) occurs(object(robot,1),pkup,13) at(object(robot,1),2,1,13) at(object(shelf,shelly),2,1,13) at(object(shelf,shelly),2,1,14) at(object(robot,1),2,1,14) occurs(object(robot,1),pkup,14) occurs(object(robot,1),pkup,15) at(object(robot,1),2,1,15) at(object(shelf,shelly),2,1,16) at(object(robot,1),2,1,16) occurs(object(robot,1),pkup,17) at(object(robot,1),2,1,17) at(object(robot,1),2,1,18) at(object(robot,1),2,1,19) at(object(robot,1),1,1,20)
+SATISFIABLE
+
+Models       : 1+
+Calls        : 1
+Time         : 0.172s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.173s
+Threads      : 4        (Winner: 4)
+
+####################################################################################################
+
+Running test case for negative X axis: 
+clingo warehouseScenario.lp test_cases/y_axis_neg.lp  test_cases/test_output.lp -c m=20 -t4
+clingo version 5.2.2
+Reading from warehouseScenario.lp ...
+Solving...
+Answer: 1
+object(shelf,shelly) object(robot,1) at(object(robot,1),1,3,0) occurs(object(robot,1),move(0,-1),1) occurs(object(robot,1),move(0,-1),2) occurs(object(robot,1),move(0,1),3) occurs(object(robot,1),move(0,-1),20) occurs(object(robot,1),pdown,16) occurs(object(robot,1),pdown,11) occurs(object(robot,1),pdown,7) occurs(object(robot,1),pdown,4) at(object(robot,1),1,2,1) at(object(robot,1),1,1,2) at(object(robot,1),1,2,3) at(object(shelf,shelly),1,2,4) at(object(robot,1),1,2,4) occurs(object(robot,1),pkup,5) at(object(robot,1),1,2,5) at(object(robot,1),1,2,6) at(object(robot,1),1,2,7) at(object(shelf,shelly),1,2,7) at(object(shelf,shelly),1,2,8) at(object(robot,1),1,2,8) occurs(object(robot,1),pkup,8) occurs(object(robot,1),pkup,9) at(object(robot,1),1,2,9) at(object(shelf,shelly),1,2,9) at(object(robot,1),1,2,10) occurs(object(robot,1),pkup,10) at(object(robot,1),1,2,11) at(object(shelf,shelly),1,2,11) at(object(shelf,shelly),1,2,12) at(object(robot,1),1,2,12) occurs(object(robot,1),pkup,12) occurs(object(robot,1),pkup,13) at(object(robot,1),1,2,13) at(object(shelf,shelly),1,2,13) at(object(shelf,shelly),1,2,14) at(object(robot,1),1,2,14) occurs(object(robot,1),pkup,14) occurs(object(robot,1),pkup,15) at(object(robot,1),1,2,15) at(object(shelf,shelly),1,2,16) at(object(robot,1),1,2,16) occurs(object(robot,1),pkup,17) at(object(robot,1),1,2,17) at(object(robot,1),1,2,18) at(object(robot,1),1,2,19) at(object(robot,1),1,1,20)
+SATISFIABLE
+
+Models       : 1+
+Calls        : 1
+Time         : 0.170s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.171s
+Threads      : 4        (Winner: 4)
+
+####################################################################################################
+
+Running test case for order pickup: 
+clingo warehouseScenario.lp test_cases/order_pickup.lp  test_cases/test_output.lp -c m=20 -t4
+clingo version 5.2.2
+Reading from warehouseScenario.lp ...
+Solving...
+UNSATISFIABLE
+
+Models       : 0
+Calls        : 1
+Time         : 0.316s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.316s
+Threads      : 4        (Winner: 0)
+
+####################################################################################################
+
+Running test case for order putdown: 
+clingo warehouseScenario.lp test_cases/order_putdown.lp  test_cases/test_output.lp -c m=20 -t4
+clingo version 5.2.2
+Reading from warehouseScenario.lp ...
+Solving...
+UNSATISFIABLE
+
+Models       : 0
+Calls        : 1
+Time         : 0.335s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.335s
+Threads      : 4        (Winner: 0)
